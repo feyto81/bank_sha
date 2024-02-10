@@ -45,8 +45,30 @@ class SignInPage extends StatelessWidget {
               color: whiteColor,
             ),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-// EMAIL INPUT
+// NOTE: EMAIL INPUT
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Email Address',
+                      style: blackTextStyle.copyWith(
+                        fontWeight: medium,
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    TextFormField(
+                      decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(14),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
