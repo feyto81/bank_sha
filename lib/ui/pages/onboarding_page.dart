@@ -2,8 +2,17 @@ import 'package:bank_sha_learn/shared/theme.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class OnboardingPage extends StatelessWidget {
+class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
+
+  @override
+  State<OnboardingPage> createState() => _OnboardingPageState();
+}
+
+class _OnboardingPageState extends State<OnboardingPage> {
+  int currentIndex = 0;
+
+  CarouselController carouselController = CarouselController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +41,13 @@ class OnboardingPage extends StatelessWidget {
                 height: 331,
                 viewportFraction: 1,
                 enableInfiniteScroll: false,
+                onPageChanged: (index, reason) {
+                  setState(() {
+                    currentIndex = index;
+                  });
+                },
               ),
+              carouselController: carouselController,
             ),
             const SizedBox(
               height: 80,
@@ -112,7 +127,9 @@ class OnboardingPage extends StatelessWidget {
                         width: 150,
                         height: 50,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            carouselController.nextPage();
+                          },
                           style: TextButton.styleFrom(
                             backgroundColor: purpleColor,
                             shape: RoundedRectangleBorder(
