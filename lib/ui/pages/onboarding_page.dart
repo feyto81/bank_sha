@@ -107,6 +107,27 @@ class OnboardingPage extends StatelessWidget {
                           color: ligthBackgroundColor,
                         ),
                       ),
+                      const Spacer(),
+                      Container(
+                        width: 150,
+                        height: 50,
+                        child: TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            backgroundColor: purpleColor,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(56),
+                            ),
+                          ),
+                          child: Text(
+                            'Continue',
+                            style: whiteTextStyle.copyWith(
+                              fontSize: 16,
+                              fontWeight: semiBold,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
