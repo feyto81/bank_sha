@@ -28,6 +28,28 @@ class SignInPage extends StatelessWidget {
               ),
             ),
           ),
+          Text(
+            'Sign In &\nGrow Your Finance',
+            style: blackTextStyle.copyWith(
+              fontSize: 20,
+              fontWeight: semiBold,
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            padding: const EdgeInsets.all(22),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: whiteColor,
+            ),
+            child: Column(
+              children: [
+// EMAIL INPUT
+              ],
+            ),
+          ),
         ],
       ),
     );
