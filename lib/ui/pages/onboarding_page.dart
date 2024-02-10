@@ -11,6 +11,7 @@ class OnboardingPage extends StatelessWidget {
       backgroundColor: ligthBackgroundColor,
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CarouselSlider(
               items: [
