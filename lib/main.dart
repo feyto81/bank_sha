@@ -1,4 +1,4 @@
-import 'package:bank_sha_learn/ui/pages/splash_flash.dart';
+import 'package:bank_sha_learn/ui/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
