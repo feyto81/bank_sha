@@ -14,6 +14,18 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   CarouselController carouselController = CarouselController();
 
+  List<String> titles = [
+    'Grow Your\nFinancial Today',
+    'Build From\nZero to Freedom',
+    'Start Together',
+  ];
+
+  List<String> subtitles = [
+    'Our system is helping you to\nachieve a better goal',
+    'We provide tips for you so that\nyou can adapt easier',
+    'We will guide you to where\nyou wanted it too',
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +79,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               child: Column(
                 children: [
                   Text(
-                    'Grow Your\nFinancial Todary',
+                    titles[currentIndex],
                     style: blackTextStyle.copyWith(
                       fontSize: 20,
                       fontWeight: semiBold,
@@ -78,7 +90,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     height: 26,
                   ),
                   Text(
-                    'Our system is helping you to\nachieve a better goal',
+                    subtitles[currentIndex],
                     style: greyTextStyle.copyWith(
                       fontSize: 16,
                     ),
