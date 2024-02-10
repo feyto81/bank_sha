@@ -73,7 +73,19 @@ class OnboardingPage extends StatelessWidget {
                     height: 50,
                   ),
                   Row(
-                    children: [],
+                    children: [
+                      Container(
+                        width: 12,
+                        height: 12,
+                        margin: const EdgeInsets.only(
+                          right: 10,
+                        ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: blueColor,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
