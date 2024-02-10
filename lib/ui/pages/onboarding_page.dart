@@ -97,7 +97,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: blueColor,
+                          color: currentIndex == 0
+                              ? blueColor
+                              : ligthBackgroundColor,
                         ),
                       ),
                       Container(
@@ -108,7 +110,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: ligthBackgroundColor,
+                          color: currentIndex == 1
+                              ? blueColor
+                              : ligthBackgroundColor,
                         ),
                       ),
                       Container(
@@ -119,7 +123,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         ),
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: ligthBackgroundColor,
+                          color: currentIndex == 2
+                              ? blueColor
+                              : ligthBackgroundColor,
                         ),
                       ),
                       const Spacer(),
