@@ -85,6 +85,28 @@ class OnboardingPage extends StatelessWidget {
                           color: blueColor,
                         ),
                       ),
+                      Container(
+                        width: 12,
+                        height: 12,
+                        margin: const EdgeInsets.only(
+                          right: 10,
+                        ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ligthBackgroundColor,
+                        ),
+                      ),
+                      Container(
+                        width: 12,
+                        height: 12,
+                        margin: const EdgeInsets.only(
+                          right: 10,
+                        ),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: ligthBackgroundColor,
+                        ),
+                      ),
                     ],
                   ),
                 ],
