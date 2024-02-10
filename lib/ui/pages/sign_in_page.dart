@@ -106,7 +106,30 @@ class SignInPage extends StatelessWidget {
                     'Forgot Password',
                     style: blueTextStyle,
                   ),
-                )
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: TextButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      backgroundColor: purpleColor,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(56),
+                      ),
+                    ),
+                    child: Text(
+                      'Sign In',
+                      style: whiteTextStyle.copyWith(
+                        fontSize: 16,
+                        fontWeight: semiBold,
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
