@@ -19,7 +19,7 @@ class CustomFormField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Email Address',
+          title,
           style: blackTextStyle.copyWith(
             fontWeight: medium,
           ),
@@ -28,6 +28,8 @@ class CustomFormField extends StatelessWidget {
           height: 8,
         ),
         TextFormField(
+          obscureText: obscureText,
+          controller: controller,
           decoration: InputDecoration(
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
