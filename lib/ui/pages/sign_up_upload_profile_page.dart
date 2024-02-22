@@ -72,6 +72,12 @@ class SignUpUploadProfilePage extends StatelessWidget {
                 const SizedBox(
                   height: 30,
                 ),
+                CustomFormField(
+                  title: 'Set PIN (6 digit number)',
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
                 CustomFilledButton(
                   title: 'Continue',
                   onPressed: () {},
