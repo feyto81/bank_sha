@@ -31,7 +31,7 @@ class SignUpPage extends StatelessWidget {
             ),
           ),
           Text(
-            'Sign In &\nGrow Your Finance',
+            'Join Us to Unlock\nYour Growth',
             style: blackTextStyle.copyWith(
               fontSize: 20,
               fontWeight: semiBold,
@@ -49,6 +49,13 @@ class SignUpPage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Full name
+                const CustomFormField(
+                  title: 'Full Name',
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
                 // NOTE: EMAIL INPUT
                 const CustomFormField(
                   title: 'Email Address',
@@ -62,20 +69,10 @@ class SignUpPage extends StatelessWidget {
                   obscureText: true,
                 ),
                 const SizedBox(
-                  height: 8,
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Text(
-                    'Forgot Password',
-                    style: blueTextStyle,
-                  ),
-                ),
-                const SizedBox(
                   height: 30,
                 ),
                 CustomFilledButton(
-                  title: 'Sign In',
+                  title: 'Continue',
                   onPressed: () {},
                 ),
               ],
@@ -85,8 +82,10 @@ class SignUpPage extends StatelessWidget {
             height: 50,
           ),
           CustomTextButton(
-            title: 'Create New Account',
-            onPressed: () {},
+            title: 'Sign In',
+            onPressed: () {
+              Navigator.pushNamed(context, '/sign-in');
+            },
           ),
         ],
       ),
