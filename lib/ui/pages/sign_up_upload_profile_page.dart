@@ -47,26 +47,14 @@ class SignUpUploadProfilePage extends StatelessWidget {
               color: whiteColor,
             ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Full name
-                const CustomFormField(
-                  title: 'Full Name',
-                ),
-                const SizedBox(
-                  height: 16,
-                ),
-                // NOTE: EMAIL INPUT
-                const CustomFormField(
-                  title: 'Email Address',
-                ),
-                const SizedBox(
-                  height: 16,
-                ),
-                // NOTE: PASSWORD INPUT
-                const CustomFormField(
-                  title: 'Password',
-                  obscureText: true,
+                Container(
+                  width: 120,
+                  height: 120,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: ligthBackgroundColor,
+                  ),
                 ),
                 const SizedBox(
                   height: 30,
