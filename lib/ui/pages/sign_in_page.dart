@@ -86,7 +86,9 @@ class SignInPage extends StatelessWidget {
           ),
           CustomTextButton(
             title: 'Create New Account',
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/sign-up');
+            },
           ),
         ],
       ),
