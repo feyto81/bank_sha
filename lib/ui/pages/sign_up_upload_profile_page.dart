@@ -60,6 +60,16 @@ class SignUpUploadProfilePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
+                  height: 16,
+                ),
+                Text(
+                  'Feyto Frizky Dewangga',
+                  style: blackTextStyle.copyWith(
+                    fontSize: 18,
+                    fontWeight: medium,
+                  ),
+                ),
+                const SizedBox(
                   height: 30,
                 ),
                 CustomFilledButton(
