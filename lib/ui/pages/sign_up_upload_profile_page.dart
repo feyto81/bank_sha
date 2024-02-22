@@ -55,6 +55,9 @@ class SignUpUploadProfilePage extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: ligthBackgroundColor,
                   ),
+                  child: Center(
+                    child: Image.asset('assets/ic_upload.png'),
+                  ),
                 ),
                 const SizedBox(
                   height: 30,
