@@ -3,8 +3,8 @@ import 'package:bank_sha_learn/ui/widgets/button.dart';
 import 'package:bank_sha_learn/ui/widgets/forms.dart';
 import 'package:flutter/material.dart';
 
-class SignUpUploadProfilePage extends StatelessWidget {
-  const SignUpUploadProfilePage({Key? key}) : super(key: key);
+class SignUpSetProfilePage extends StatelessWidget {
+  const SignUpSetProfilePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
